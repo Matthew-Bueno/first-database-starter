@@ -1,8 +1,9 @@
 # First Database Starter
 
-West-MEC Coding Year 2, Node.js + MongoDB, Day 1.
+West-MEC Coding Year 2, Shop Inventory, Day 1.
 
-Create a MongoDB database with JavaScript: create, read, update, delete, and drop.
+Your cart already works in IndexedDB. This week the shop's **products and stock** move to MongoDB.
+Today you build that inventory with JavaScript: create, read, update, delete, and drop.
 No MongoDB account today.
 
 ## Get the code

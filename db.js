@@ -1,6 +1,6 @@
 // db.js: connects to MongoDB. You do not need to change this file today.
 // It tries 3 places, in order:
-//   1. MONGODB_URI, if it is set (next lesson: MongoDB Atlas, a database in the cloud)
+//   1. MONGODB_URI, if it is set (later: MongoDB Atlas, a database in the cloud)
 //   2. MongoDB installed on this computer (mongodb://127.0.0.1:27017)
 //   3. A practice MongoDB server (needs npm run get-mongodb first)
 import { MongoClient } from "mongodb";
@@ -31,8 +31,8 @@ export async function connect() {
 
   client = await tryLocal();
   if (client) {
-    // Start every run with a clean westmec database, so your output matches the slides
-    await client.db("westmec").dropDatabase();
+    // Start every run with a clean inventoryDB, so your output matches the slides
+    await client.db("inventoryDB").dropDatabase();
     console.log("Connected to MongoDB on this computer");
     return client;
   }

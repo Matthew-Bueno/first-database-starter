@@ -1,7 +1,7 @@
 {
   "name": "first-database-starter",
   "version": "1.0.0",
-  "description": "West-MEC Coding Year 2: create your first MongoDB database with JavaScript",
+  "description": "West-MEC Coding Year 2: build the shop's inventory database with JavaScript",
   "type": "module",
   "main": "app.js",
   "scripts": {
