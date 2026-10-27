@@ -6,7 +6,27 @@ const client = await connect();
 
 // ---------- Part 2: CREATE (the database, the collection, the first products) ----------
 // YOUR CODE: Part 2
+    const db = client.db("inventory");
+    const products = db.collection("products");
 
+    await products.insertOne({
+        _id: "Hoodie",
+        name: "Hoodie",
+        price: 35
+    });
+
+    await products.insertMany([
+        {
+            _id: "Shirt",
+            name: "T-Shirt",
+            price: 20
+        },
+        {
+            _id: "hat",
+            name: "Hat",
+            price: 15
+        }
+    ])
 // ---------- Part 3: READ ----------
 // YOUR CODE: Part 3
 
